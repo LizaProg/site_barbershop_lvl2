@@ -1,0 +1,62 @@
+@import "variables";
+/*
+.main-nav{
+  background-color: rgb(130, 101, 80);
+}*/
+
+.main-nav{
+  width: 320px;
+  margin: 0 auto;
+
+  border: 1px solid green;
+}
+
+.main-nav__list{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {
+  .main-nav{
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .site-list{
+    width: 570px;
+
+    border: 1px solid #000;
+  }
+
+  .user-list{
+    width: 60px;
+
+    border: 1px solid red;
+  }
+}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper{
+    width: 960px;
+  }
+
+  .site-list{
+    width: 780px;
+  }
+
+  .user-list{
+    width: 160px;
+  }
+
+}

@@ -1,0 +1,54 @@
+@import "variables";
+
+/*
+.stats{
+  background-color: #fff;
+  color: #000;
+}*/
+
+.stats {
+  width: 320px;
+  margin: 0 auto;
+
+  border: 1px solid greenyellow;
+}
+
+.stats__header {
+  padding: 30px 40px 25px 40px;
+
+  border: 1px solid gold;
+}
+
+.stats__list {
+  width: 100%;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 640px;
+    margin-top: -185px;
+  }
+
+  .stats__list {
+    display: flex;
+  }
+}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {
+  .stats {
+    width: 960px;
+    margin-top: -160px;
+
+    display: flex;
+  }
+
+  .stats__header{
+    width: 240px;
+  }
+
+  .stats__list{
+    width: 640px;
+  }
+}

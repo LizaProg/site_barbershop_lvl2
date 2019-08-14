@@ -1,0 +1,41 @@
+@import "variables";
+
+.news {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.news__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {
+  .news {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {
+  .news {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .news__list{
+    display: flex;
+  }
+
+  .news__item{
+    width: 320px;
+  }
+
+  .news__to-all{
+    order: 3;
+  }
+
+}

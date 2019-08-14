@@ -1,0 +1,22 @@
+@import "variables";
+
+.reviews{
+  width: 280px;
+  margin: 0 auto;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {
+  .reviews{
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {
+  .reviews{
+    width: 960px;
+    margin: 0 auto;
+  }
+}

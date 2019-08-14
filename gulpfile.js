@@ -20,6 +20,8 @@ gulp.task('style', function () {
 
 });
 
+
+//запустить: gulp server
 gulp.task('server', gulp.series('style', function(){
     browserSync.init({
         server: '.',

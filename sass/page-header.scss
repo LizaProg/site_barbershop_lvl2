@@ -1,0 +1,44 @@
+@import "variables";
+/*
+.page-header__logo{
+  display: block;
+  background-color: rgb(36, 36, 36);
+}
+
+.page-header__logo-image{
+  background-image: url("../img/logo.svg");
+}*/
+
+.page-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo{
+  //высоту задаем тк занем что в этом блоке кроме лого ничего не будет
+  height: 85px;
+
+  border: 1px solid red;
+}
+
+.page-header__logo img{
+  width: 226px;
+  height: 85px;
+}
+
+/*Tablet width*/
+
+@media (min-width: $tablet-width) {
+  .page-header__logo{
+    order: 2;
+    height: 400px;
+  }
+}
+
+/*Desktop width*/
+
+@media (min-width: $desktop-width) {
+  .page-header__logo{
+    height: 648px;
+  }
+}

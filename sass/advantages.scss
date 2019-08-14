@@ -1,0 +1,54 @@
+@import "variables";
+
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+
+  border: 1px solid lightcoral;
+}
+
+.advantages__item{
+  border: 1px solid hotpink;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 640px;
+  }
+
+  .advantages__toggles {
+    display: none;
+  }
+}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {
+  .advantages{
+    width: 960px;
+
+    .visually-hidden{
+      display: none;
+    }
+  }
+
+  .advantages__list{
+    display: flex;
+  }
+
+  .advantages__item{
+    width: 320px;
+  }
+
+  .advantages__toggles {
+    display: none;
+  }
+
+
+}

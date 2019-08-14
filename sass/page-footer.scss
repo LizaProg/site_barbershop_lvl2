@@ -1,0 +1,24 @@
+@import "variables";
+
+.page-footer{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.social__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.copyright__link{
+  display: block;
+}
+
+/*Tablet width*/
+@media (min-width: $tablet-width) {}
+
+/*Desktop width*/
+@media (min-width: $desktop-width) {}
