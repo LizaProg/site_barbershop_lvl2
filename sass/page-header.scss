@@ -18,7 +18,7 @@
   //высоту задаем тк занем что в этом блоке кроме лого ничего не будет
   height: 85px;
 
-  border: 1px solid red;
+  text-align: center;
 }
 
 .page-header__logo img{
@@ -29,9 +29,29 @@
 /*Tablet width*/
 
 @media (min-width: $tablet-width) {
+  .page-header{
+    background-color: #000;
+  }
+
   .page-header__logo{
     order: 2;
+
+    width: 100%;
     height: 400px;
+
+    background-color: #000000;
+    background-image: url("../img/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px;
+    /*background-size: cover;*/
+  }
+
+  .page-header__logo img{
+    display: block;
+    width: 370px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
@@ -40,5 +60,12 @@
 @media (min-width: $desktop-width) {
   .page-header__logo{
     height: 648px;
+
+    background-position: center 0;
+    background-size: cover;
+  }
+
+  .page-header__logo img{
+    margin-top: 57px;
   }
 }
